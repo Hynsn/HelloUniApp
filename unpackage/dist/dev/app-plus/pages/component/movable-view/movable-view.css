@@ -1,0 +1,20 @@
+
+uni-movable-view {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 4.6875rem;
+		width: 4.6875rem;
+		background-color: #007AFF;
+		color: #fff;
+}
+uni-movable-area {
+		height: 9.375rem;
+		width: 100%;
+		background-color: #D8D8D8;
+		overflow: hidden;
+}
+.max {
+		width:15.625rem;
+		height: 15.625rem;
+}
