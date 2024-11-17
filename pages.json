@@ -31,6 +31,23 @@
 			}
 		},
 		{
+			"path": "pages/test/sqlite/sqlitepage/sqlitepage",
+			"style": {
+				"navigationBarTitleText": "测试Demo",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		},
+		{
 			"path": "pages/tabBar/API/API",
 			"style": {
 				"navigationBarTitleText": "接口",
@@ -1355,8 +1372,12 @@
 				"iconPath": "static/component.png",
 				"selectedIconPath": "static/componentHL.png",
 				"text": "内置组件"
-			},
-			{
+			}, {
+				"pagePath": "pages/test/sqlite/sqlitepage/sqlitepage",
+				"iconPath": "static/api.png",
+				"selectedIconPath": "static/apiHL.png",
+				"text": "测试Demo"
+			}, {
 				"pagePath": "pages/tabBar/API/API",
 				"iconPath": "static/api.png",
 				"selectedIconPath": "static/apiHL.png",
