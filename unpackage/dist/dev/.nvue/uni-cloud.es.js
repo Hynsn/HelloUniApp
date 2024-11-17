@@ -32,6 +32,25 @@ const pages = [
     }
   },
   {
+    path: "pages/test/sqlite/sqlitepage/sqlitepage",
+    style: {
+      navigationBarTitleText: "测试Demo",
+      "app-plus": {
+        bounce: "vertical",
+        titleNView: {
+          buttons: [
+            {
+              text: "",
+              fontSrc: "/static/uni.ttf",
+              fontSize: "22px",
+              color: "#FFFFFF"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
     path: "pages/tabBar/API/API",
     style: {
       navigationBarTitleText: "接口",
@@ -1279,6 +1298,12 @@ const tabBar = {
       text: "内置组件"
     },
     {
+      pagePath: "pages/test/sqlite/sqlitepage/sqlitepage",
+      iconPath: "static/api.png",
+      selectedIconPath: "static/apiHL.png",
+      text: "测试Demo"
+    },
+    {
       pagePath: "pages/tabBar/API/API",
       iconPath: "static/api.png",
       selectedIconPath: "static/apiHL.png",
@@ -1598,7 +1623,7 @@ function I(e2) {
 const S = true, b = "app", A = I(define_process_env_UNI_SECURE_NETWORK_CONFIG_default), C = b, P = I(""), T = I("[]") || [];
 let O = "";
 try {
-  O = "";
+  O = "__UNI__F859503";
 } catch (e2) {
 }
 let E = {};
