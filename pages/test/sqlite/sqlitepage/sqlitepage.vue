@@ -13,14 +13,14 @@
 			<button type="default" @click="deleteChatRow">删除所有数据</button>
 			<button type="default" @click="selectSql">查询数据</button>
       <button type="default" @click="callNative">调用原生方法</button>
-
+      <button type="default" @click="callNative1">调用原生方法</button>
 		</div>
 	</view>
 </template>
  
 <script>
 	// import Sqlite from '../../utils/sqllite.js'
-  import { getMemInfo } from "@/uni_modules/ug-test"
+  import { getMemInfo,sdkInit } from "@/uni_modules/ug-test"
 	export default {
 		data() {
 			return {
@@ -68,11 +68,7 @@
         });
       },
       callNative1(){
-        let memInfo = getMemInfo1()
-        uni.showToast({
-          icon: 'none',
-          title: '系统内存情况:' + memInfo
-        });
+        sdkInit();
       },
 			// async open(){
 			// 	let odb=await Sqlite.openSqlite();
