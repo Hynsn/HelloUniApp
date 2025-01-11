@@ -114,7 +114,7 @@
 							url: '/pages/component/web-view/web-view'
 						}, {
 							name: '本地网页',
-							url: '/pages/component/web-view-local/web-view-local'
+							url: '/pages/component/web-view-local/webview-local'
 						}]
 					},
 					// #endif

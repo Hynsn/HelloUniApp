@@ -298,8 +298,17 @@
 		// #endif
 		// #ifdef APP-PLUS || H5
 		{
-			"path": "pages/component/web-view-local/web-view-local",
-			"style": {}
+			"path": "pages/component/web-view-local/webview-local",
+			"style": {
+							"navigationBarTitleText": "设备详情",
+							// #ifdef APP-PLUS
+							"app-plus": {
+								"bounce": "none",
+								"nvue": true,
+								"disableScroll": true
+							}
+							// #endif
+						}
 		},
 		// #endif
 		{

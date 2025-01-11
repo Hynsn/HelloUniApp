@@ -1,0 +1,27 @@
+<template>
+	<view>
+		<!-- <web-view src="/hybrid/html/local.html" @message="getMessage"></web-view> -->
+		<web-view class="detailWebview" src="/static/dist/index.html#/earphone/index/equipment?language=zh-Hans&locale_name=UGREEN%20HiTune%20S6%20Magic&safeAreaInsetsBottom=null&platform=android&device_name=UGREEN%20HiTune%20S6%20Magic&readUserGuide=false" @message="getMessage"></web-view>
+	</view>
+</template>
+
+<script>
+	export default {
+		methods: {
+			getMessage(e) {
+				uni.showModal({
+					content: JSON.stringify(e.detail),
+					showCancel: false
+				})
+			}
+		}
+	}
+</script>
+
+<style>
+	.detailWebview {
+		height: 1000px;
+		width: 500px;
+		color: aqua;
+	}
+</style>

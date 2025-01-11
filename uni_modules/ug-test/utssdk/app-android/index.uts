@@ -10,7 +10,7 @@ import { MyApiOptions, MyApiResult, MyApi, MyApiSync } from '../interface.uts';
 /* 引入 unierror.uts 文件中定义的变量 */
 import { MyApiFailImpl } from '../unierror';
 import NativeCode from "com.ugreen.bluetooth.NativeCode";
-import FitCloudSDK from "com.ugreen.fitcloudsdk.FitCloudSDK";
+// import FitCloudSDK from "com.ugreen.fitcloudsdk.FitCloudSDK";
 import Application from "android.app.Application";
 
 export function getMemInfo():Array<number>{
@@ -20,7 +20,7 @@ export function getMemInfo():Array<number>{
 }
 
 export function sdkInit(){
-	const app = UTSAndroid.getAppContext() as Application;
-	const activity = UTSAndroid.getUniActivity();
-	FitCloudSDK.sdkInit(activity!,app);
+	// const app = UTSAndroid.getAppContext() as Application;
+	// const activity = UTSAndroid.getUniActivity();
+	// FitCloudSDK.sdkInit(activity!,app);
 }
