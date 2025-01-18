@@ -21,7 +21,7 @@
  
 <script>
 	// import Sqlite from '../../utils/sqllite.js'
-  import { getMemInfo,sdkInit,logCallback,testJavaCrash } from "@/uni_modules/ug-test"
+  import { getMemInfo,logCallback,testJavaCrash } from "@/uni_modules/ug-test"
 	export default {
 		data() {
 			return {
@@ -72,7 +72,6 @@
         });
       },
       callNative1(){
-        sdkInit();
       },
       textCrash(){
         testJavaCrash()

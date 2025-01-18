@@ -11,19 +11,12 @@ import { MyApiOptions, MyApiResult, MyApi, MyApiSync } from '../interface.uts';
 import { MyApiFailImpl } from '../unierror';
 import NativeCode from "com.ugreen.bluetooth.NativeCode";
 import UGCrashHandler from "com.ugreen.bluetooth.UGCrashHandler";
-// import FitCloudSDK from "com.ugreen.fitcloudsdk.FitCloudSDK";
 import Application from "android.app.Application";
 
 export function getMemInfo():Array<number>{
 	const context = UTSAndroid.getAppContext();
 	let kotlinArray = NativeCode.getMemInfo(context);
 	return UTSArray.fromNative(kotlinArray)
-}
-
-export function sdkInit(){
-	// const app = UTSAndroid.getAppContext() as Application;
-	// const activity = UTSAndroid.getUniActivity();
-	// FitCloudSDK.sdkInit(activity!,app);
 }
 
 // 日志callback
