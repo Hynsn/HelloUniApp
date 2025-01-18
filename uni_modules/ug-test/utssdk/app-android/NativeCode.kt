@@ -31,4 +31,11 @@ object NativeCode {
         // totalMem 设备内存，单位MB
         return arrayOf(availMem, totalMem)
     }
+	
+	fun testJavaCrash(){
+		val s2: String? = null
+		if (s2!!.length > 0) {
+			throw RuntimeException("主线程异常")
+		}
+	}
 }

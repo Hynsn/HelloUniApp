@@ -14,13 +14,14 @@
 			<button type="default" @click="selectSql">查询数据</button>
       <button type="default" @click="callNative">调用原生方法</button>
       <button type="default" @click="callNative1">调用原生方法</button>
+      <button type="default" @click="textCrash">测试崩溃</button>
 		</div>
 	</view>
 </template>
  
 <script>
 	// import Sqlite from '../../utils/sqllite.js'
-  import { getMemInfo,sdkInit } from "@/uni_modules/ug-test"
+  import { getMemInfo,sdkInit,logCallback,testJavaCrash } from "@/uni_modules/ug-test"
 	export default {
 		data() {
 			return {
@@ -58,6 +59,9 @@
 		onLoad() {
 			// console.log('Sqlite:',Sqlite)
 			// this.open();
+      logCallback( log => {
+        console.log(log);
+      });
 		},
 		methods: {
       callNative(){
@@ -69,6 +73,9 @@
       },
       callNative1(){
         sdkInit();
+      },
+      textCrash(){
+        testJavaCrash()
       },
 			// async open(){
 			// 	let odb=await Sqlite.openSqlite();

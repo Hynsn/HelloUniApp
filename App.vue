@@ -40,6 +40,10 @@
 					console.log("preLogin fail res: ", res);
 				}
 			})
+			uni.onError( res => {
+				console.log("onError")
+				console.log(res)
+			})
 			// #endif
 		},
 		onShow: function() {
